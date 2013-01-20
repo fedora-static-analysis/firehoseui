@@ -1,0 +1,9 @@
+Django projects are not convenient to distribute as python packages, nor is it
+convenient to deploy a python package as a WSGI app. Django does however make
+it easy to write reusable apps that can be distributed as python packages.
+Thus, these steps are expected for deployment of firehoseui:
+
+1) install package "firehoseui" through usual means (hint: virtualenv with pip)
+
+2) copy the "project" tree to somewhere within /var/www/, and deploy it as a
+normal django WSGI app that uses the virtualenv from step 1
